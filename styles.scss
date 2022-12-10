@@ -537,8 +537,8 @@ progress {
 
 .team {
   &__container {
-    height: 740px;
     margin-top: 100px;
+    // height: 740px;
   }
 
   &__title {
@@ -573,7 +573,8 @@ progress {
 
   &__gallery {
     display: flex;
-    height: 560px;
+    // height: 500px;
+    flex-wrap: wrap;
   }
 
   &__gallery-left {
@@ -590,4 +591,53 @@ progress {
     width: 33%;
     height: 90%;
   }
+}
+
+.team__img {
+  display: flex;
+  align-items: flex-end;
+  width: 350px;
+  height: 350px;
+  padding: 20px;
+  background-position: center;
+  background-size: cover;
+}
+
+.anna {
+  background-image: url(..//images/Anna.png);
+}
+
+.andy {
+  background-image: url(../images/Andy.png);
+}
+
+.katy {
+  background-image: url(../images/Katy.png);
+}
+
+.margo {
+  background-image: url(../images/Margo.png);
+}
+
+.kanye {
+  background-image: url(../images/Kanye.png);
+}
+
+.marta {
+  background-image: url(../images/Marta.png);
+}
+
+.team__first-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+}
+
+.team__second-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+  margin-top: 50px;
 }
