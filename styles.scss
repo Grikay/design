@@ -3,7 +3,7 @@
 //   justify-content: space-between;
 // }  - обьединяет свойста
 
-// $aside-width: 200px - переменная 
+// $aside-width: 200px - переменная
 
 // * {
 //   border: 1px solid red;
@@ -157,6 +157,12 @@ a {
   line-height: 30px;
   border: none;
   transition: 0.3s;
+
+  &__disabled {
+    background-color: #333;
+    color: #999
+   
+  }
 }
 
 .button:hover {
@@ -591,16 +597,31 @@ progress {
     width: 33%;
     height: 90%;
   }
-}
 
-.team__img {
-  display: flex;
-  align-items: flex-end;
-  width: 350px;
-  height: 350px;
-  padding: 20px;
-  background-position: center;
-  background-size: cover;
+  &__img {
+    display: flex;
+    align-items: flex-end;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__first-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+  }
+
+  &__second-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+    margin-top: 50px;
+  }
 }
 
 .anna {
@@ -627,17 +648,7 @@ progress {
   background-image: url(../images/Marta.png);
 }
 
-.team__first-row {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  gap: 50px;
-}
-
-.team__second-row {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  gap: 50px;
-  margin-top: 50px;
-}
+// .team__img:hover {
+//   transform: rotate(180deg)
+//   transform: rotate(350deg)
+// }

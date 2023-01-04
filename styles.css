@@ -146,6 +146,11 @@ a {
   transition: 0.3s;
 }
 
+.button__disabled {
+  background-color: #333;
+  color: #999;
+}
+
 .button:hover {
   background-color: #bf6342;
   transform: scale(1.2);
@@ -578,6 +583,21 @@ progress {
   background-size: cover;
 }
 
+.team__first-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+}
+
+.team__second-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+  margin-top: 50px;
+}
+
 .anna {
   background-image: url(..//images/Anna.png);
 }
@@ -600,19 +620,4 @@ progress {
 
 .marta {
   background-image: url(../images/Marta.png);
-}
-
-.team__first-row {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  gap: 50px;
-}
-
-.team__second-row {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  gap: 50px;
-  margin-top: 50px;
 }
