@@ -622,6 +622,30 @@ progress {
     gap: 50px;
     margin-top: 50px;
   }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+  }
+
+  &__button-work {
+    height: 56px;
+    width: 158px;
+ }
+  
+  &__start-work {
+    height: 56px;
+    width: 158px;
+    padding: 13px 38px;
+    color: #fff;
+    background: #fd8558;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+ }
 }
 
 .anna {
@@ -649,6 +673,53 @@ progress {
 }
 
 // .team__img:hover {
-//   transform: rotate(180deg)
-//   transform: rotate(350deg)
+//   transform: scale(1.2);
 // }
+
+.SpeechCEO {
+
+  &__container {
+  display: flex;
+  justify-content: center; 
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 750px;
+  width: 100%;
+  background-color: #3A0F73;
+  }
+
+  &__title {
+    height: 200px;
+  }
+
+  &__quote {
+  height: 105px;
+  width: 888px;
+  left: 83px;
+  
+ }
+ 
+  &__text {   
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+  width: 874px;
+  }
+
+  &__author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 150px;
+  padding-top: 90px;
+ }
+
+ &__name {
+ color: #ffffff;
+ }
+
+}
