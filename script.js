@@ -23,6 +23,7 @@
 // console.log(firstNum,'меньше чем', secondNum)
 // }
 
+
 let arg1 = prompt('Введи первое число: ');
 if (arg1.length == 0 || arg1.indexOf(' ') != -1) {
     alert('Некорректный ввод первого числа!');
