@@ -1,20 +1,24 @@
-"use strict"
-let arg1 = prompt('Введи первое число: ');
-if (arg1.length == 0 || arg1.indexOf(' ') != -1) {
-    alert('Некорректный ввод первого числа!');
-}
-// Проверка на NaN
-if (isNaN(Number(arg1))) {
-    alert('Это не число -____-');
-}
+// Объявление директивы
+'use strict'
 
-let operator = prompt('Введи знак ( +, -, * или / ): ');
-if (operator.length == 0 || operator.indexOf(' ') != -1) {
-    alert('Некорректный ввод знака!');
-}
-// if (operator != '+') {
-//     alert('Некорректный ввод знака!');
-// }
+let arg1;
+do {
+    arg1 = prompt('Введи первое число: ');
+} while(arg1.length === 0 || arg1.indexOf(' ') !== -1 || isNaN(arg1)); 
+
+// arg1.indexOf(' ') != -1 - он ищет подстроку substr в строке str, начиная с позиции pos,
+//  и возвращает позицию, на которой располагается совпадение, либо -1 при отсутствии совпадений
+
+const operators = ['+','-','*','/'];
+let operator;
+do {
+    operator = prompt('Введите знак');
+} while(operator.length === 0 || operator.indexOf(' ') !== -1 || !operators.includes(operator));
+
+let arg2;
+do {
+    arg2 = prompt('Введи второе число: ');
+} while(arg2.length === 0 || arg2.indexOf(' ') !== -1 || isNaN(arg2));
 
 
 switch(operator) {
