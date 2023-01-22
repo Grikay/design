@@ -384,6 +384,7 @@ a {
 .percentage__scale-container {
   display: flex;
   height: 360px;
+  gap: 100px;
 }
 
 .text__scale-container {
@@ -462,7 +463,7 @@ progress {
 .info__contents {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 200px;
 }
 
 .info__wrap:first-child {
@@ -654,7 +655,7 @@ progress {
   text-align: center;
   height: 750px;
   width: 100%;
-  background-color: #3A0F73;
+  background-color: #3a0f73;
 }
 
 .SpeechCEO__title {
@@ -687,4 +688,124 @@ progress {
 
 .SpeechCEO__name {
   color: #ffffff;
+}
+
+.newsline__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 750px;
+  width: 100%;
+}
+
+.newsline__title {
+  margin-bottom: 28px;
+  font-size: 14px;
+  color: #fd8558;
+}
+
+.newsline__subtitle {
+  margin-bottom: 28px;
+  font-size: 32px;
+}
+
+.newsline__photo {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.newsline__pic {
+  height: 243px;
+  width: 360px;
+  top: 10px;
+}
+
+.newsline__text {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.newsline__block {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  text-align: left;
+  height: 250px;
+  width: 360px;
+  top: 10px;
+}
+
+.newsline__data {
+  display: flex;
+  justify-content: left;
+  font-size: 15px;
+  color: #fd8558;
+  gap: 40px;
+}
+
+.newsline__describing {
+  margin: 28px;
+  margin-left: 0px;
+}
+
+.newsline__information {
+  margin-bottom: 28px;
+  font-size: 24px;
+}
+
+.newsline__more {
+  color: #fd8558;
+  font-size: 15px;
+}
+
+.contactinfo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 100%;
+  background-color: #000;
+}
+
+.contactinfo__list {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  height: 350px;
+  margin-top: 100px;
+}
+
+.contactinfo__anow {
+  color: #ffffff;
+}
+
+.contactinfo__firsttitle {
+  display: flex;
+  font-size: 40px;
+}
+
+.contactinfo__secondtitle {
+  display: flex;
+}
+
+.contactinfo__segments {
+  display: flex;
+  color: #fff;
+  gap: 40px;
+}
+
+.contactinfo__allrights {
+  color: #fff;
+  margin-bottom: 100px;
+}
+
+.contactinfo__allrights__title1 {
+  font-size: 123px;
 }

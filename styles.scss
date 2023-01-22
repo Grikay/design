@@ -160,8 +160,7 @@ a {
 
   &__disabled {
     background-color: #333;
-    color: #999
-   
+    color: #999;
   }
 }
 
@@ -398,6 +397,7 @@ a {
 .percentage__scale-container {
   display: flex;
   height: 360px;
+  gap: 100px;
 }
 
 .text__scale-container {
@@ -477,7 +477,7 @@ progress {
   &__contents {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 200px;
   }
 
   &__wrap {
@@ -634,8 +634,8 @@ progress {
   &__button-work {
     height: 56px;
     width: 158px;
- }
-  
+  }
+
   &__start-work {
     height: 56px;
     width: 158px;
@@ -645,7 +645,7 @@ progress {
     font-weight: 700;
     font-size: 15px;
     border: none;
- }
+  }
 }
 
 .anna {
@@ -677,16 +677,15 @@ progress {
 // }
 
 .SpeechCEO {
-
   &__container {
-  display: flex;
-  justify-content: center; 
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 750px;
-  width: 100%;
-  background-color: #3A0F73;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 750px;
+    width: 100%;
+    background-color: #3a0f73;
   }
 
   &__title {
@@ -694,32 +693,156 @@ progress {
   }
 
   &__quote {
-  height: 105px;
-  width: 888px;
-  left: 83px;
-  
- }
- 
-  &__text {   
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 29px;
-  text-align: center;
-  color: #ffffff;
-  width: 874px;
+    height: 105px;
+    width: 888px;
+    left: 83px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+    color: #ffffff;
+    width: 874px;
   }
 
   &__author {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 350px;
-  height: 150px;
-  padding-top: 90px;
- }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 150px;
+    padding-top: 90px;
+  }
 
- &__name {
- color: #ffffff;
- }
+  &__name {
+    color: #ffffff;
+  }
+}
 
+.newsline {
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 750px;
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 28px;
+    font-size: 14px;
+    color: #fd8558;
+  }
+
+  &__subtitle {
+    margin-bottom: 28px;
+    font-size: 32px;
+  }
+
+  &__photo {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+  }
+
+  &__pic {
+    height: 243px;
+    width: 360px;
+    top: 10px;
+  }
+
+  &__text {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    text-align: left;
+    height: 250px;
+    width: 360px;
+    top: 10px;
+  }
+
+  &__data {
+    display: flex;
+    justify-content: left;
+    font-size: 15px;
+    color: #fd8558;
+    gap: 40px;
+  }
+
+  &__describing {
+    margin: 28px;
+    margin-left: 0px;
+  }
+
+  &__information {
+    margin-bottom: 28px;
+    font-size: 24px;
+  }
+
+  &__more {
+    color: #fd8558;
+    font-size: 15px;
+  }
+}
+
+.contactinfo {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 100%;
+    background-color: #000;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 350px;
+    margin-top: 100px;
+  }
+
+  &__anow {
+    color: #ffffff;
+    // width: 600px;
+  }
+
+  &__firsttitle {
+    display: flex;
+    font-size: 40px;
+  }
+
+  &__secondtitle {
+    display: flex;
+  }
+
+  &__segments {
+    display: flex;
+    // align-items: center;
+    color: #fff;
+    gap: 40px;
+  }
+
+  &__allrights {
+    color: #fff;
+    margin-bottom: 100px;
+
+    &__title1 {
+      font-size: 123px;
+    }
+  }
 }
