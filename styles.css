@@ -803,9 +803,9 @@ progress {
 
 .contactinfo__allrights {
   color: #fff;
-  margin-bottom: 100px;
+  margin-top: -150px;
 }
 
 .contactinfo__allrights__title1 {
-  font-size: 123px;
+  size: 300px;
 }
