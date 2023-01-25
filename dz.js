@@ -5,24 +5,16 @@
     .then((response) => response.json())
     .then((data) => data.data);
   const dataBase = await response;
-  console.log(
-    "1. Получение всех данных с сервера \n",
-    dataBase,
-    "\n-----------------"
-  );
+  console.log("1. Получение всех данных с сервера \n", dataBase, "\n");
 
   const lastNames = dataBase.map((item) => item.last_name);
-  console.log(
-    "2. Получение только фамилий \n",
-    lastNames,
-    "\n-----------------"
-  );
+  console.log("2. Получение только фамилий \n", lastNames, "\n");
 
   const filteredItems = dataBase.filter((item) => item.last_name[0] === "F");
   console.log(
     "3. Получение всех данных пользователей, фамилии которых начинаются на F \n",
     filteredItems,
-    "\n-----------------"
+    "\n"
   );
 
   const nameSurname = dataBase.reduce((prev, current) => {
@@ -32,13 +24,13 @@
   console.log(
     "4. Наша база содержит данные следующих пользователей: \n",
     nameSurname,
-    "\n-----------------"
+    "\n"
   );
 
   const objectKeys = Object.keys(dataBase[0]);
   console.log(
     "5. Получаем названия всех ключей в обьекте пользователя \n",
     objectKeys,
-    "\n-----------------"
+    "\n"
   );
 })();
