@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* сброс стилей */
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -85,13 +84,6 @@ a {
   gap: 33px;
 }
 
-/* .navigation__item {
-  margin-right: 33px;
-}
-
-.navigation__item:last-child {
-  margin-right: 0;
-} */
 .navigation__item:first-child {
   color: #fd8558;
 }
@@ -125,16 +117,6 @@ a {
   gap: 28px;
 }
 
-/* .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 154px;
-  height: 56px;
-  color: #fff;
-  background-color: #FD8558;
-  white-space: nowrap;
-} */
 .button {
   padding: 13px 38px;
   color: #fff;
@@ -389,8 +371,9 @@ a {
 /* Процентная шкала */
 .percentage__scale-container {
   display: flex;
+  text-align: center;
   height: 360px;
-  gap: 100px;
+  gap: 120px;
 }
 
 .text__scale-container {
@@ -530,17 +513,6 @@ progress {
   margin-bottom: 40px;
 }
 
-.team__container {
-  margin-top: 100px;
-}
-
-.team__title {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 180px;
-}
-
 .team__title-big {
   width: 30%;
   height: 100%;
@@ -562,6 +534,7 @@ progress {
   font-size: 32px;
   font-weight: 400;
   color: #222;
+  margin-top: -30px;
 }
 
 .team__gallery {
@@ -585,8 +558,6 @@ progress {
 }
 
 .team__img {
-  display: flex;
-  align-items: flex-end;
   width: 350px;
   height: 350px;
   padding: 20px;
@@ -596,14 +567,12 @@ progress {
 
 .team__first-row {
   display: flex;
-  justify-content: center;
+  width: 100%;
   width: 100%;
   gap: 50px;
 }
 
 .team__second-row {
-  display: flex;
-  justify-content: center;
   width: 100%;
   gap: 50px;
   margin-top: 50px;
@@ -633,28 +602,87 @@ progress {
   border: none;
 }
 
-.anna {
-  background-image: url(..//images/Anna.png);
+.team__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  width: 100%;
 }
 
-.andy {
-  background-image: url(../images/Andy.png);
+.team__button {
+  width: 158px;
+  height: 56px;
+  color: #fff;
+  background: #fd8558;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 30px;
+  border: none;
+  margin-bottom: 100px;
 }
 
-.katy {
-  background-image: url(../images/Katy.png);
+.team__button .button:hover {
+  background-color: #bf6342;
+  transform: scale(1.2);
 }
 
-.margo {
-  background-image: url(../images/Margo.png);
+.rotate-block {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 100px;
 }
 
-.kanye {
-  background-image: url(../images/Kanye.png);
+/* Изображение */
+.change-img {
+  width: 320px;
+  height: 320px;
+  position: relative;
+  perspective: 1000px;
 }
 
-.marta {
-  background-image: url(../images/Marta.png);
+.change-img:hover .front-side-img {
+  transform: rotateY(180deg);
+}
+
+.change-img:hover .back-side-img {
+  transform: rotateY(360deg);
+}
+
+/* Стороны изображения */
+.front-side-img,
+.back-side-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.front-side-img img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+
+.back-side-img img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+  transform: scaleX(-1);
+  /* Отражаем изображение по горизонтали */
+}
+
+.back-side-img {
+  transform: rotateY(180deg);
 }
 
 .SpeechCEO__container {
